@@ -31,6 +31,8 @@ def create_user():
 @app.route("/result/<int:id>")
 def show_user(id):
     print("Showing the User Info From the Form")
+    if 'id' not in session:
+        return redirect('/logout')
     data = {
         "id":id
         }
