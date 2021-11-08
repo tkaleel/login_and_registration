@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Result</title>
+</head>
+<body>
+    
+    <div class="container justify-center">
+        <div class="container main space-around direction-column">
+            <h1>Welcome {{user.first_name}} {{user.last_name}}!</h1>
+            <!-- <div class="container">
+                <div class="col">
+                    <p>Dojo Location: </p>
+                    <p>Favorite Langauge: </p>
+                    <p>Comments: </p>
+                </div>
+                <div class="col">
+                    <p>{{user.location}}</p>
+                    <p>{{user.language}}!!!</p>
+                    <p>{{user.comments}}</p>
+                </div>
+            </div> -->
+
+            <div class="container justify-center">
+                <button><a class="navlist" href="../">Home</a></button>
+                <button><a class="navlist" href="/logout">Logout</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
